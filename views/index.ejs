@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AZ_TOUR_API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="table">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">AZ_TOUR_API</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Available Routes</h1>
+      <div class="row">
+        <div class="col">
+          <h2>Users</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Route</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/users</td>
+                <td>Get all users</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/users/:id</td>
+                <td>Get one user by id</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/user</td>
+                <td>Add one user</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Places</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Route</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/places</td>
+                <td>Get all places</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/places/:id</td>
+                <td>Get one place by id</td>
+              </tr>
+              <tr>
+                <td>PATCH</td>
+                <td>/places/cart/add/:id</td>
+                <td>Add to cart</td>
+              </tr>
+              <tr>
+              <td>PATCH</td>
+              <td>/places/cart/remove/:id</td>
+              <td>Remove from cart</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Posts</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Route</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/posts</td>
+                <td>Get all posts</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/posts/:id</td>
+                <td>Get one post by id</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/posts</td>
+                <td>Add one post</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/posts/:id</td>
+                <td>Delete one message</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="col">
+        <h2>COMMENTS</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Route</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GET</td>
+              <td>/comments</td>
+              <td>Get all comments</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/comments/:id</td>
+              <td>Get one comment by id</td>
+            </tr>
+            <tr>
+              <td>POST</td>
+              <td>/comment</td>
+              <td>Add one comment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
